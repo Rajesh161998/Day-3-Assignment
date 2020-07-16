@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Methods of Array.....
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr=[1,2,3,4,5];
+            console.log(arr);
+            console.log(arr.copyWithin(4,1)); 
+            /*The copyWithin() method copies array elements to another 
+            position in the array overwriting the existing Values.*/
+
+            var t=arr.entries();
+            for (i of t){
+                console.log(i);
+            }
+        /*The entries() method returns an array Iterator 
+        object with key/value pairs.*/
+
+        console.log(arr.every(c));
+        function c(num){
+                return num>0;
+        }
+        /* The every() method check if all the  elements pass a test,
+        provided as a function. This method execures the function once for
+        each element present in the array.*/
+
+        console.log(arr.fill("0"));
+        // This method fills the input array with same element.
+
+        var f=[30,40,50,55,56,57,58]
+        console.log(f.filter(d));
+        function d(f){
+            return f>55;
+        }
+        
+        console.log(f.find(fun));
+        function fun(f){
+            return f>50;
+        }
+         /*The find() method returns the value of the first element in an array that pass a test (provided as a function).
+        The find() method executes the function once for each element present in the array:
+        If it finds an array element where the function returns a true value, find() returns the value of that array element (and does not check the remaining values)
+        Otherwise it returns undefined*/
+
+        console.log(f.findIndex(car));
+        function car(f){
+            return f>30;
+        }
+         /*The findIndex() method returns the index of the first element in an 
+         array that pass a test (provided as a function).The findIndex() method 
+         executes the function once for each element present in the array:
+         If it finds an array element where the function returns a true value, 
+         findIndex() returns the index of that array element (and does not check 
+         the remaining values)Otherwise it returns -1*/
+
+        console.log(f.forEach(bus));
+        function bus(i,j){
+            console.log(j +":"+i);
+        }
+         /*The forEach() method calls a function 
+         once for each element in an array, in order.*/
+        
+        console.log(f.pop());
+        /*The pop() method removes the last element of an array, 
+        and returns that element.*/
+
+        var f1=f.push(58);
+        /*The push() method adds new items to the end of an array, 
+        and returns the new length.*/
+        console.log(f1);
+        console.log(f);
+        
+        console.log(f.slice(2,6));
+        var f2=[30,40,50,55,56,57,58]
+        f2.splice(2,0,"Prasad","Sai");
+        console.log(f2);
+        console.log(f2.reverse());
+        console.log(f2.toString());
+        
+        </script>
+    </body>
+</html>
